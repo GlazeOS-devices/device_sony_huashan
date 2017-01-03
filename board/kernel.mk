@@ -7,6 +7,8 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 # Kernel properties
 TARGET_KERNEL_SOURCE := kernel/sony/msm8960t
 TARGET_KERNEL_CONFIG := viskan_huashan_defconfig
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-linux-androideabi-4.9/bin
+KERNEL_TOOLCHAIN_PREFIX := arm-linux-androideabi-
 
 # Custom boot
 BOARD_CUSTOM_BOOTIMG := true
